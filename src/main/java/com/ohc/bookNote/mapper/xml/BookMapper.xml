@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ohc.bookNote.mapper.BookMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.ohc.bookNote.model.po.Book">
+        <id column="id" property="id" />
+        <result column="cover" property="cover" />
+        <result column="title" property="title" />
+        <result column="author" property="author" />
+        <result column="date" property="date" />
+        <result column="press" property="press" />
+        <result column="abs" property="abs" />
+        <result column="cid" property="cid" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, cover, title, author, date, press, abs, cid
+    </sql>
+
+</mapper>
