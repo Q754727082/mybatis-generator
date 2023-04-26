@@ -49,7 +49,7 @@ public class ContentCodeGenerator {
         // 生成路径,System.getProperty("user.dir")对应当前项目的路径
         gc.setOutputDir(System.getProperty("user.dir") + "/src/main/java");
         gc.setAuthor("SilenceOu");
-        // 控制是否开启某些功能
+        // 控制是否开启某些功能,比如字段下划线转驼峰、逻辑删除、自动填充等
         gc.setOpen(false);
         gc.setSwagger2(false);
         // 移除IService前面的I，%s代表驼峰状的实体名
